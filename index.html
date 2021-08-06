@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <title>Stocks: Profit or loss</title>
+</head>
+<body>
+    <section class="section">
+        <div class ="displayFlex">
+            <div class="col1 col">
+                <div class="main-section">
+                    <h1>Check Profit/Loss on your Stock</h1>
+                    <form name ="check-form" class="form">
+                        <label>
+                            <input class="input" placeholder="Enter Cost price of Stock" type="text" required> Purchase Price</label>
+                        <br>
+                        <label>
+                            <input class="input" placeholder="Enter Cost price of Stock" type="text" required> Stock Quantity </label>
+                        <br>
+                        <label>
+                            <input class="input" placeholder="Enter Cost price of Stock" type="text" required> Current Price </label>
+                            
+                            <button type="submit">Check</button>
+                        <br>
+                    </form>
+                    <div class="output"></div>
+                </div>
+            </div>
+            <div class="col2 col">
+                <div class="imgOverlap"><img src="./images/tower.png"></div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

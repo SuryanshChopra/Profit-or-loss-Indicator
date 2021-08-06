@@ -1,0 +1,115 @@
+:root{
+    --grey: #8b8b8b;
+    --offwhite: #d5d5d5;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-image: url("./images/offWhiteBg2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.displayFlex{
+    /* background-color: black; */
+    display: flex;
+    margin: 4rem auto;
+    max-width: 80%;
+    min-height: 80vh;
+    /* box-shadow: 0 40px -10px var(--grey); */
+    box-shadow: 0 2rem 2rem grey;
+}
+
+.col1{
+    width: 60%;
+    background-image: url("./images/blackBg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: inherit;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.col2{
+    width: 40%;
+    background-image: url("./images/orangeBg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: inherit;
+    text-align: right;
+    position: relative;
+}
+
+.imgOverlap {
+    position: absolute;
+    bottom: -5px;
+    left: -20%;
+}
+
+.imgOverlap img{
+    min-height: 90vh;
+    object-fit: fill;
+}
+
+.main-section {
+    padding: 0 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid var(--offwhite);
+    background-color: transparent;
+    width: 50%;
+    margin-bottom: 1rem;
+    color: var(--offwhite);
+}
+
+button {
+    display: block;
+    background-color: var(--offwhite);
+    color: black;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 2px solid var(--offwhite);
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--offwhite);
+}
+
+.output{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-weight: 400;
+    border-bottom: 1px solid;
+    color: var(--offwhite);
+}
+
+/* .transparentBg{
+    background-image: url("");
+} */
+
