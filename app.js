@@ -14,19 +14,6 @@ function checkHandler(e){
     // cols[0].classList.remove("transparentBg");
     // cols[1].classList.remove("transparentBg");
 
-    var request = require('request');
-var requestOptions = {
-        'url': 'https://api.tiingo.com/api/test?token=d6f8b32a099dd663ee3a1f418285a3928a77399b',
-        'headers': {
-            'Content-Type': 'application/json'
-            }
-        };
-
-request(requestOptions,
-        function(error, response, body) {
-            console.log(body);
-        }
-);   
 
     let CP = inputs[0].value;
     let Qty = inputs[1].value;
@@ -48,14 +35,14 @@ request(requestOptions,
             else{
                 const profit = ((SP-CP)*Qty).toFixed(2)
                 const profitPer=(((SP-CP)*100)/CP).toFixed(2) ;
-                output.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 1rem; color: #d5d5d5" >You gained ${profitPer}%. Your total profit is ₹${profit}</div>`;
+                output.innerHTML=  `<div style="background-color: rgb(255, 255,255,0.2); padding: 1rem;" >You gained ${profitPer}%. Your total profit is ₹${profit}</div>`;
             }
         }
         else {
-            output.innerHTML="Please enter values greater than 0 (only numbers are allowed in above fields)"
+            output.innerHTML="Please enter values greater than 0 (only numbers are allowed in above fields"
         }
     }
     else{
-        output.innerHTML="Please enter values greater than 0 (only numbers are allowed in above fields)"
+        output.innerHTML="Please enter values greater than 0 (only numbers are allowed in above fields"
     }
 }

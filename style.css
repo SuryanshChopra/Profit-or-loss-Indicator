@@ -77,8 +77,10 @@ input {
     border-bottom: 1px solid var(--offwhite);
     background-color: transparent;
     width: 50%;
+    height:20%;
     margin-bottom: 1rem;
     color: var(--offwhite);
+    font-size: 1rem;
 }
 
 button {
@@ -101,12 +103,21 @@ button:hover{
     margin-top: 2rem;
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    background-color: #d5d5d5;
+    
 }
 
 label {
     font-weight: 400;
     border-bottom: 1px solid;
-    color: var(--offwhite);
+    color: white;
+    font-size: 1rem;
+    
+   
+}
+
+.submit-pad{
+    padding: 2rem 0rem;
 }
 
 /* .transparentBg{
