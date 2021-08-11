@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
@@ -18,24 +20,52 @@
                     <h1>Check Profit/Loss on your Stock</h1>
                     <form name ="check-form" class="form">
                         <label>
+                            <input class="input" id="input0" placeholder="Enter the stock symbol" type="text" required> Enter the stock symbol</label>
+                        <br>
+                        <label>
                             <input class="input" id="input1" placeholder="Enter Cost price of Stock" type="text" required> Purchase Price</label>
                         <br>
                         <label>
                             <input class="input" id="input2" placeholder="Enter Cost price of Stock" type="text" required> Stock Quantity </label>
                         <br>
                         <label>
-                            <input class="input" id="input3" placeholder="Enter Cost price of Stock" type="text" required> Current Price </label>
-                            <div class="submit-pad">
-                                <button type="submit">Check</button>
-                            </div>
+                            <!-- <input class="input" id="input3" placeholder="Enter Cost price of Stock" type="text" required> Current Price -->
+                            <!-- <div style="color: var(--offwhite);" class="output01">Stock Price </div> -->
+                            </label> 
+                        <div class="submit-pad">
+                            <button type="submit">Check</button>
+                        </div>
                             
                         <br>
                     </form>
+                    <div class="output0"></div>
+                    
                     <div class="output"></div>
                 </div>
             </div>
             <div class="col2 col">
                 <div class="imgOverlap"><img src="./images/tower.png"></div>
+                <div class="connect" id="connect">
+                    <ul class="connect-list">
+                        <li class="list-item-index"><a target="_blank" href="mailto:suryanshchopra987@gmail.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="list-item-index"><a target="_blank" href="https://github.com/SuryanshChopra">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="list-item-index"><a target="_blank" href="https://www.linkedin.com/in/suryanshchopra">
+                            <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-item-index"><a target="_blank" href="https://instagram.com/choprasuryansh">
+                            <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+                
             </div>
         </div>
     </section>

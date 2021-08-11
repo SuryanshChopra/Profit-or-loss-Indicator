@@ -99,6 +99,16 @@ button:hover{
     color: var(--offwhite);
 }
 
+.output0{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    background-color: #d5d5d5;  
+    /* padding: 1rem; */
+    /* display: none; */
+    
+}
+
 .output{
     margin-top: 2rem;
     font-size: 1.2rem;
@@ -120,7 +130,36 @@ label {
     padding: 2rem 0rem;
 }
 
-/* .transparentBg{
-    background-image: url("");
-} */
+#connect {
+    width: 100%;
+    min-height: 6vh;
+ 
+}
+.connect-list {
+    height: inherit;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 1px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    position: relative;
+    
+    
+}
 
+.list-item-index {
+    list-style: none;
+    font-size: 2rem;
+    /* padding: 10rem 1rem 0rem; */
+    padding: 0.5rem 1rem;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
