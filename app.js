@@ -1,3 +1,10 @@
+// var requirejs = require('requirejs');
+
+// requirejs.config()
+
+var token = config.TOKEN;
+
+
 form = document.forms[0];
 input0 = document.querySelector("#input0");
 input1 = document.querySelector("#input1");
@@ -28,8 +35,10 @@ function checkHandler(e){
     
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    myHeaders.append("Authorization", "Token d6f8b32a099dd663ee3a1f418285a3928a77399b");
-    myHeaders.append("Cookie", "sessionid=5xfxsp6puxg09u3er56b4o5t5mlzdhxs");
+    // myHeaders.append("Authorization", "Token d6f8b32a099dd663ee3a1f418285a3928a77399b");
+    myHeaders.append("Authorization", "Token " + token);
+    console.log(token)
+    // myHeaders.append("Cookie", "sessionid= process.env.SESSION");
     myHeaders.append("User-Agent", "Mozilla/5.0");
    
     let inputText = input0.value;
@@ -91,3 +100,9 @@ function checkHandler(e){
     .catch(error => console.log('error', error));
     }
   
+
+// requirejs(['foo', 'bar'], function(foo,   bar) {
+//     //foo and bar are loaded according to requirejs
+//     //config, but if not found, then node's require
+//     //is used to load the module.
+// });
