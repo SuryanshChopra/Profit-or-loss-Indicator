@@ -32,7 +32,6 @@ function checkHandler(e){
     
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-    // myHeaders.append("Authorization", "Token d6f8b32a099dd663ee3a1f418285a3928a77399b");
     myHeaders.append("Authorization", "Token " + token);
     myHeaders.append("User-Agent", "Mozilla/5.0");
    
