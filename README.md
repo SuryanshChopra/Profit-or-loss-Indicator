@@ -7,3 +7,4 @@ This project is created in Vanilla JS, It inputs 3 parameters
 
 Based on these 3 parameters, it will give output of the current price and and shows profit and loss according to it.
 
+Blog: https://dev.to/suryanshchopra/stocks-profit-or-loss-indicator-12fp
