@@ -1,6 +1,3 @@
-// var requirejs = require('requirejs');
-
-// requirejs.config()
 
 var token = config.TOKEN;
 
@@ -37,8 +34,6 @@ function checkHandler(e){
     myHeaders.append("Content-Type", "application/json");
     // myHeaders.append("Authorization", "Token d6f8b32a099dd663ee3a1f418285a3928a77399b");
     myHeaders.append("Authorization", "Token " + token);
-    console.log(token)
-    // myHeaders.append("Cookie", "sessionid= process.env.SESSION");
     myHeaders.append("User-Agent", "Mozilla/5.0");
    
     let inputText = input0.value;
@@ -52,7 +47,6 @@ function checkHandler(e){
 
     fetch(getTranslationURL(inputText), requestOptions)
     .then(response => response.json())
-    // .then(json => console.log(json[0].adjClose))
     .then(json => {
         
         var translatedText = json[0].adjClose;
@@ -99,10 +93,3 @@ function checkHandler(e){
     
     .catch(error => console.log('error', error));
     }
-  
-
-// requirejs(['foo', 'bar'], function(foo,   bar) {
-//     //foo and bar are loaded according to requirejs
-//     //config, but if not found, then node's require
-//     //is used to load the module.
-// });
