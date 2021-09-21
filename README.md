@@ -1,5 +1,9 @@
 # Profit-or-loss-Indicator
 
+Mark 14: Profit and loss calculator (stocks)
+
+
+
 This project is created in Vanilla JS, It inputs 3 parameters
 1. Stock symbol
 2. Initial investing amount
